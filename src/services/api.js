@@ -4,7 +4,7 @@
  * 所有方法返回 Promise，出错时抛出 Error（含 message）。
  */
 
-const BASE = '/api'
+const BASE = import.meta.env.VITE_API_BASE_URL || '/api'
 
 /* ──────────────────── 内部工具 ──────────────────── */
 
